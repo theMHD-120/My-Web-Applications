@@ -1,0 +1,216 @@
+body {
+  text-align: center;
+  background-size: 100%;
+  background-color: rgb(45, 45, 44);
+  background-image: url("../Shots/back.jpg");
+}
+
+header {
+  font-size: 48px;
+  margin-top: 17px;
+  color: goldenrod;
+  font-weight: bolder;
+  margin-bottom: -65px;
+  font-family:'B Nazanin';
+  text-shadow: 1px 2px 3px rgb(95, 76, 2);
+}
+
+button {
+  cursor: pointer;
+}
+
+footer {
+  font-size: large;
+  margin-top: 20px;
+  color: goldenrod;
+  font-weight: bolder;
+  font-family:'B Nazanin';
+  text-shadow: 1px 1.5px 3px rgb(95, 76, 2);
+}
+
+a:link, a:visited {
+  color: unset;
+  cursor: pointer;
+  transition: 300ms;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(219, 188, 109);
+  text-shadow: 1px 2px 5px rgb(128, 103, 3);
+}
+
+/*----------------------------------------------------------------*/
+
+.logo {
+    margin: auto;
+    width: 650px;
+    height: 650px;
+    transition: 0.8s;
+    margin-top: 30px;
+    border-radius: 50%;
+    border-style: none;
+    background-size: 142%;
+    background-position-y: -7px;
+    background-repeat: no-repeat;
+    background-position-x: -105px;
+    background-image: url("../Shots/لوگوی بانک فخر ایرانیان.gif");
+    box-shadow: inset 1px 5px 30px 5px rgba(252, 234, 115, 0.3), 1px 5px 20px 10px rgba(252, 234, 115, 0.3);
+}
+.logo:hover {
+  box-shadow: inset 1px 5px 20px 8px rgba(252, 234, 115, 0.3), 1px 10px 30px 20px rgba(255, 221, 0, 0.25);
+}
+
+.Welmes {
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: bolder;
+  font-family:'B Jadid';
+  color: rgb(253, 207, 81);
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.login {
+  width: 220px;
+  height: 50px;
+  border: none;
+  font-size: 30px;
+  transition: 300ms;
+  margin-top: -10px;
+  border-radius: 13px;
+  font-weight: bolder;
+  padding-bottom: 55px;
+  font-family:'B Nazanin';
+  background-color: #fefefed6;
+  box-shadow: 1px 1px 20px 1px rgba(63, 51, 2);
+  background: linear-gradient(90deg,  rgba(255,145,0,0.75) 10%, rgba(249,255,0) 50%, rgba(255,145,0,0.75) 90%);
+}
+.login:hover {
+  background-color: #fefefe;
+  -webkit-transform: scale(0.99);
+  box-shadow: 1px 2px 40px 20px rgba(83, 67, 3, 0.8);
+}
+
+.input-text {
+  width: 600px;
+  height: 100px;
+  font-size: 25px;
+  margin-top: 80px;
+  transition: 300ms;
+  padding-right: 20px;
+  border-radius: 17px;
+  font-family:'B Nazanin';
+  color: rgb(255, 231, 170);
+  border: 1px solid goldenrod;
+  background-color: rgb(43, 31, 2, 0.7);
+} 
+.input-text:hover {
+  box-shadow: inset 1px 2px 10px 3px rgba(218, 165, 32, 0.35);
+}
+.input-text:focus {
+  outline: none;
+  border: 1px solid goldenrod;
+  box-shadow: inset 1px 2px 10px 3px rgba(218, 165, 32, 0.35);
+}
+
+.c-keys {
+  width: 292px;
+  height: 70px;
+  font-size: 23px;
+  transition: 300ms;
+  border-radius: 12px;
+  font-family:'B Nazanin';
+  margin: 30px 4px auto 4px;
+  color: rgb(255, 231, 170);
+  border: 1px solid goldenrod;
+  background-color: rgba(63, 45, 3, 0.7);
+}
+.c-keys:hover {
+  background-color: rgba(119, 85, 6, 0.8);
+}
+.c-keys:active {
+  border: 1px solid rgb(255, 183, 0);
+  background-color: rgba(180, 129, 11, 0.9);
+}
+
+.type-field {
+  width: 580px;
+  height: 144.5px;
+  font-size: 21px;
+  border-radius: 20px;
+  font-weight: bolder;
+  font-family:'B Nazanin';
+  color: rgb(255, 231, 170);  
+  margin: 15px 43.5px auto auto;
+  border: 1px solid goldenrod;
+}
+
+.enter-type {
+  width: 180px;
+  height: 100px;
+  font-size: 21px;
+  transition: 300ms;
+  border-radius: 10px;
+  font-weight: bolder;
+  background-size: 100px;
+  font-family:'B Nazanin';
+  margin: 2px 5px auto 5px;
+  color: rgb(255, 231, 170);
+  background-repeat: no-repeat;
+  border: 1px solid goldenrod;
+  background-position-x: center;
+  background-position-y: center;
+  background-color: rgba(85, 61, 4, 0.7);
+}
+.enter-type:hover {
+  color: rgb(255, 251, 239);
+  border: 1px solid rgb(255, 183, 0);
+  background-color: rgba(143, 102, 8, 0.8);
+}
+
+.enter-type-radio {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: 15px 85px 0px 85px;
+}
+
+/*----------------------------------------------------------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 50px;
+  backdrop-filter: blur(10px);
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+  width: 700px;
+  height: 770px;
+  padding-top: 3px;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 70px;
+  border: 1px solid goldenrod;
+  background-color: rgb(43, 31, 2, 0.9);
+  box-shadow: 0px 5px 20px 3px rgba(218, 165, 32, 0.35);
+}
+
+/* Add Zoom Animation */
+.animate {
+  animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+  from {transform: scaleY(0)}
+  to {transform: scaleY(1)}
+}
+
+/*----------------------------------------------------------------*/

@@ -1,0 +1,2 @@
+Pages are not responsive;
+Please run them on Chrome or Firefox.

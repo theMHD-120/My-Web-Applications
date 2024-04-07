@@ -1,0 +1,143 @@
+<!DOCTYPE <!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>صفحه مشتری - بانک فخرایرانیان</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../Shots/fakhr-logo.png"/>
+        <link rel="stylesheet" href="customer-styles.css">
+        <script src="cust-logic.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <img src="../Shots/fakhr-logo.png" id="photo" title="نمایه" class="logo"/>
+            <h1 class="Welmes">فخرا بانک؛ خوش آمدید.</h1>
+
+            <fieldset class="field-01">
+                <legend>هم اکنون</legend>
+                <div style="margin-top: -10px;" id="Time#01"></div>
+                <div id="Date#01"></div>
+            </fieldset>
+
+            <fieldset class="field-02">
+                <legend>گزینه ها</legend>
+                <button class="option" onclick="tabs_work(1, true)">مشخصات</button>
+                <button class="option" onclick="tabs_work(2, true)">حساب ها</button>
+                <button class="option" style="width: 130px" onclick="tabs_work(3, true)">تراکنش ها</button>
+                <button class="option" style="width: 130px" onclick="tabs_work(4, true)">وام ها</button>
+                <a href="Login.html"><button class="option" onclick="window.close()">خروج</button></a>
+            </fieldset>
+
+            <footer class="foot">کلیه حقوق محفوظ است. <a title="معرفی بانک" href="Intro.html" target="_blank">بانک فخرایرانیان </a></footer>
+        </header>
+
+        <form id="dashbord" class="modal-content animate" action="#">
+            <div class="container-1">
+                <h1 class="Welmes">مشخصات</h1>
+                <div class="inputs" style="margin-top: 45px;">
+                    <label class="lbls">نام کاربری</label><br>
+                    <input id="uname" class="input-text" type="text" placeholder="نام کاربری" name="username" required onkeyup="active_changes_dash()">
+                </div>
+                <div class="inputs" style="margin-top: 45px;">
+                    <label class="lbls">رمز عبور</label><br>
+                    <input id="pass" class="input-text" type="password" value="40030490"  placeholder="رمز عبور" name="password" onclick="chnage_pass_type(this)">
+                </div>
+                <div class="inputs">
+                    <label class="lbls">نام</label><br>
+                    <input id="fname" class="input-text" type="text" placeholder="نام" name="first-name" required onkeyup="active_changes_dash()">
+                </div>
+                <div class="inputs">
+                    <label class="lbls">نام خانوادگی</label><br>
+                    <input id="lname" class="input-text" type="text"  placeholder="نام خانوادگی" name="last-name" required onkeyup="active_changes_dash()">
+                </div>
+                <div class="inputs">
+                    <label class="lbls">شماره ملی</label><br>
+                    <input id="id" class="input-text" type="number" value="1350964463" placeholder="شماره ملی" name="nid" title="جهت تغییر شماره ملی خود به یکی از شعب بانک مراجعه نمایید" disabled>
+                </div>
+                <div class="inputs">
+                    <label class="lbls">تاریخ تولد</label><br>
+                    <input id="bday" class="input-text" type="text" value="22 اردیبهشت 1381" placeholder="تاریخ تولد" name="birth-day" title="جهت تغییر تاریخ تولد خود به یکی از شعب بانک مراجعه کتید" disabled>
+                </div>
+                <div class="inputs">
+                    <label class="lbls">شماره تلفن</label><br>
+                    <input id="pnum" class="input-text" type="number" placeholder="شماره تلفن" name="phone-num" required onkeyup="active_changes_dash()">
+                </div>
+                <div class="inputs">
+                    <label class="lbls">تغییر تصویر نمایه</label><br>
+                    <input id="chph" class="input-text" name="change-photo" type="file" style="cursor: pointer; padding:15px 100px;" onchange="loadFile(event, this);active_changes_dash();"/>
+                </div>
+
+                <input id="save-changes-dash" class="c-keys" value="ذخیره تغییرات" type="button" style="background-color: rgba(25, 18, 1, 0.5);" disabled/>
+                <button class="c-keys" type="button" onclick="tabs_work(1, false)">بستن</button>
+            </div>
+        </form>
+        
+        <form id="accounts" class="modal-content animate" action="#">
+            <div class="container-2">
+                <h1 class="Welmes">حساب ها</h1>
+                
+                <input class="c-keys" value="افزودن حساب" type="button"/>
+                <button class="c-keys" type="button" onclick="tabs_work(2, false)">بستن</button>
+            </div>
+        </form>
+
+        <div id="transactions" class="modal-content animate">
+            <div class="container-3">
+                <h1 class="Welmes">تراکنش ها</h1>
+                
+                <fieldset class="field-03">
+                    <legend>لیست تراکنش ها</legend>
+                    <div id="trans-list" class="inner-field">
+                        <!--list of transactions-->
+                    </div>
+                </fieldset>  
+                
+                <div id="trans-window" class="modal">
+                    <form class="modal-content-2 animate-2" action="#">
+                        <div class="container-4">
+                            <div class="add-window-title">افزودن تراکنش جدید</div>
+                            <input id="source" class="input-text" style="width: 600px; margin-top: 100px;" type="number" placeholder="شماره حساب مبدا" name="src_acc" required>
+                            <input id="dest" class="input-text" style="width: 600px; margin-top: 30px;" type="number" placeholder="شماره حساب مقصد" name="des_acc" required>
+                            <input id="count" class="input-text" style="width: 600px; margin-top: 30px;" type="number" placeholder="مبلغ" name="cnt" required>
+                            <button class="c-keys" type="button" onclick="trans_to_list()">ثبت تراکنش</button>  <!--submit-->
+                            <button class="c-keys" type="button" onclick="form_work(1, false)">بستن</button> 
+                        </div>
+                    </form>
+                </div>
+                
+                <input class="c-keys" value="تراکنش جدید" type="button" onclick="form_work(1, true)"/>
+                <button class="c-keys" type="button" onclick="tabs_work(3, false)">بستن</button>
+            </div>
+        </div>
+
+        <div id="loans" class="modal-content animate" action="#">
+            <div class="container-4">
+                <h1 class="Welmes">وام ها</h1>
+
+                <fieldset class="field-03">
+                    <legend>لیست وام ها</legend>
+                    <div id="loans-list" class="inner-field">
+                        <!--list of loans-->
+                    </div>
+                </fieldset>
+                
+                <div id="loan-window" class="modal">
+                    <form class="modal-content-2 animate-2" action="#">
+                        <div class="container-5">
+
+                            <button class="c-keys" type="submit" onclick="loans_to_list()">ثبت وام</button>  <!--submit-->
+                            <button class="c-keys" type="button" onclick="form_work(2, false)">بستن</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <input class="c-keys" value="درخواست وام جدید" type="button" onclick="form_work(2, true)"/>
+                <button class="c-keys" style="margin-top: 50px;" type="button" onclick="tabs_work(4, false)">بستن</button>
+            </div>
+        </div>
+    
+    </body>
+</html>

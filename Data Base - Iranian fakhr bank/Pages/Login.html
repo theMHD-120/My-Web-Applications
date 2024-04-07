@@ -1,0 +1,46 @@
+<!DOCTYPE <!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>بانک فخرایرانیان</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../Shots/fakhr-logo.png"/>
+        <link rel="stylesheet" href="login-styles.css">
+        <script src="login-logic.js"></script>
+    </head>
+    <body>
+
+        <div class="logo"></div>
+        <h1 class="Welmes">به سامانه بانک فخرایرانیان خوش آمدید</h1>
+        <button class="login" onclick="tab_work(true)">ورود</button>
+
+        <div id="window-01" class="modal">
+            <form class="modal-content animate" action="#">
+                <div class="container">
+                    <header>ورود به سامانه فخرابانک</header>
+                    <input id="uname" class="input-text" type="text" placeholder="نام کاربری" name="username" required>
+                    <input id="pass" class="input-text" style="margin-top: 30px;" type="text" name="password" placeholder="رمز عبور" required onclick="chnage_pass_type(this)">
+                    <fieldset class="type-field">
+                        <legend>نوع کاربری خود را انتخاب کنید</legend>
+                        <input value="ورود کارمندان" class="enter-type" type="button" style="background-image: url('../Shots/Employee.png');" disabled/>
+                        <input value="ورود مدیران" class="enter-type" type="button" style="background-image: url('../Shots/Admin.png');" disabled/>
+                        <input value="ورود مشتریان" class="enter-type" type="button" style="background-image: url('../Shots/User.png');" disabled/>
+                        <div>
+                            <input id="employee" class="enter-type-radio" type="radio" name="contact"/>
+                            <input id="admin" class="enter-type-radio" type="radio" name="contact" checked/>
+                            <input id="customer" class="enter-type-radio" type="radio" name="contact"/>
+                        </div>
+                    </fieldset>
+                    <button class="c-keys" type="button" onclick="check_validation(this)">ورود</button>
+                    <button class="c-keys" type="button" onclick="new_tab()">بازنشانی رمز عبور</button>
+                    <button class="c-keys" type="button" onclick="tab_work(false)">بستن</button>
+                </div>
+            </form>
+        </div>
+
+        <footer class="foot">کلیه حقوق محفوظ است. <a title="معرفی بانک" href="Intro.html" target="_blank">بانک فخرایرانیان </a></footer>
+
+    </body>
+</html>

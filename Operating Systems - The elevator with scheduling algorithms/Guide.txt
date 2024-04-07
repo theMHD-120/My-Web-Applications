@@ -1,0 +1,3 @@
+>>> The Elevator:
+Only FCFS and SJF argorithms are implemented in js file.
+Premptive algorithms are not working currectly (only round robin implemented in python file).

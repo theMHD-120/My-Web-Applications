@@ -1,0 +1,53 @@
+<!DOCTYPE html> <html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="eng" dir="ltr">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Elevator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./Shots/elevator_logo.png">
+        <link rel="stylesheet" href="elevator_style.css">
+        <script src="elevator_logic.js"></script>
+    </head>
+    <body onload="digiClock();">
+
+        <div>
+            <div class="logo"></div>
+            <p class="logo_text">The Elevator</p>
+            <sub class="logo_producer">
+                <a href="https://github.com/theMHD-120" target="_blank">
+                    by theMHD
+                </a>
+            </sub>
+        </div>
+
+        <div id="space" >
+
+            <div id="enter_options" style="display: block;">
+                <p id="clock"></p>
+                <input id="enter_elev" type="button" value="Enter to Elevator" onclick="elev_tab(true);"/>
+                <input class="information" type="button" value="About me!" onclick="aboutMe()"/>
+            </div>
+
+            <div id="elev_options" style="display: none;">
+                <div class="logo_text" style="margin: 25px 17.5px auto; font-size: 40px;">The Elevator Panel</div>
+                <input id="source" class="input-text" type="number" placeholder="Src" title="Source" onclick="control_number(this)" />
+                <input id="floor" class="input-text" style="border-radius: 60px;" type="number" value="0" title="Current floor" onclick="change_floor(this)" disabled/>
+                <input id="dest" class="input-text" type="number" placeholder="Dest" title="Destinantion" onclick="control_number(this)" />
+                <select id="alg_selector" type="button" style="padding-left: 10px; margin-top: 0px;" onclick="changeAlg(this)">
+                    <option value="0" selected>Select scheduling algorithm</option>
+                    <option value="1">FCFS</option>
+                    <option value="2">SJF</option>
+                    <option value="3">SRTF</option>
+                    <option value="4">Round Robin</option>
+                </select>
+                <input type="button" value="Enter passanger" style="margin-top: 15px;" onclick="toQueue()" />
+                <input type="button" value="Start" style="margin-top: 15px;" onclick="letsRun()" />
+                <input type="button" value="Close" style="margin-top: 15px;" onclick="elev_tab(false); stop_all();" />
+            </div>
+
+        </div>
+        
+    </body>
+</html>
