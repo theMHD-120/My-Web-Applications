@@ -1,257 +1,272 @@
 body {
-    text-align: center;
-    background-size: 100%;
-    backdrop-filter: blur(7px);
-    background-image: url("../Shots/back2.gif");
+  text-align: center;
+  background-size: 100%;
+  backdrop-filter: blur(7px);
+  background-image: url("../Shots/back2.gif");
 }
 
 header {
-    width: 600px;
-    float: right;
-    height: 100%;
-    text-align: center;
-    border-radius: 50px;
-    background-color: rgb(43, 31, 2, 0.9);
-    box-shadow: 0px 5px 20px 3px rgba(218, 165, 32, 0.35);
+  width: 600px;
+  float: right;
+  height: 100%;
+  text-align: center;
+  border-radius: 50px;
+  background-color: rgb(43, 31, 2, 0.9);
+  box-shadow: 0px 5px 20px 3px rgba(218, 165, 32, 0.35);
 }
 
 fieldset {
-    width: 400px;
-    margin: auto;
-    height: 140px;
-    font-size: 30px;
-    border-radius: 20px;
-    font-weight: bolder;
-    font-family:'B Nazanin';
-    color: rgb(255, 231, 170);  
-    border: 1px solid goldenrod;
+  width: 400px;
+  margin: auto;
+  height: 140px;
+  font-size: 30px;
+  border-radius: 20px;
+  font-weight: bolder;
+  font-family: "B Nazanin";
+  color: rgb(255, 231, 170);
+  border: 1px solid goldenrod;
 }
 
 legend {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 input[type="file"] {
-    display:flexbox;
+  display: flexbox;
 }
 
 footer {
-    font-size: large;
-    margin-top: 18px;
-    color: goldenrod;
-    font-weight: bolder;
-    font-family:'B Nazanin';
-    text-shadow: 1px 1.5px 3px rgb(95, 76, 2);
+  font-size: large;
+  margin-top: 18px;
+  color: goldenrod;
+  font-weight: bolder;
+  font-family: "B Nazanin";
+  text-shadow: 1px 1.5px 3px rgb(95, 76, 2);
 }
 
-a:link, a:visited {
-    color: unset;
-    cursor: pointer;
-    transition: 300ms;
-    text-decoration: none;
+a:link,
+a:visited {
+  color: unset;
+  cursor: pointer;
+  transition: 300ms;
+  text-decoration: none;
 }
 a:hover {
-    color: rgb(219, 188, 109);
-    text-shadow: 1px 2px 5px rgb(128, 103, 3);
+  color: rgb(219, 188, 109);
+  text-shadow: 1px 2px 5px rgb(128, 103, 3);
 }
 
 /*----------------------------------------------------------------*/
 
 .logo {
-    width: 185px;
-    height: 185px;
-    border-radius: 50%;
-    margin: 20px auto -15px auto;
-    box-shadow: 0px 0.5px 20px 1px rgba(218, 165, 32, 0.6);
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  margin: 20px auto -15px auto;
+  box-shadow: 0px 0.5px 20px 1px rgba(218, 165, 32, 0.6);
 }
 
 .Welmes {
-    font-size: 40px;
-    margin-bottom: 1px;
-    font-weight: bolder;
-    font-family:'B Jadid';
-    color: rgb(253, 207, 81);
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-size: 40px;
+  margin-bottom: 1px;
+  font-weight: bolder;
+  font-family: "B Jadid";
+  color: rgb(253, 207, 81);
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
 .field-01 {
-    margin-top: 3px;
-    margin-bottom: 10px;
+  margin-top: 3px;
+  margin-bottom: 10px;
 }
 
 .field-02 {
-    height: 368px;
+  height: 368px;
 }
 
 .option {
-    width: 280px;
-    height: 50px;
-    border: none;
-    font-size: 30px;
-    transition: 300ms;
-    border-radius: 10px;
-    font-weight: bolder;
-    padding-bottom: 55px;
-    font-family:'B Nazanin';
-    margin: 8px 4px 12px 4px;
-    background-color: #fefefed6;
-    box-shadow: 1px 1px 20px 1px rgba(63, 51, 2);
-    background: linear-gradient(90deg,  rgba(255,145,0,0.75) 10%, rgba(249,255,0) 50%, rgba(255,145,0,0.75) 90%);
+  width: 280px;
+  height: 50px;
+  border: none;
+  font-size: 30px;
+  transition: 300ms;
+  border-radius: 10px;
+  font-weight: bolder;
+  padding-bottom: 55px;
+  font-family: "B Nazanin";
+  margin: 8px 4px 12px 4px;
+  background-color: #fefefed6;
+  box-shadow: 1px 1px 20px 1px rgba(63, 51, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 145, 0, 0.75) 10%,
+    rgba(249, 255, 0) 50%,
+    rgba(255, 145, 0, 0.75) 90%
+  );
 }
 .option:hover {
-    background-color: #fefefe;
-    -webkit-transform: scale(0.99);
-    box-shadow: 1px 2px 40px 20px rgba(83, 67, 3, 0.8);
+  background-color: #fefefe;
+  -webkit-transform: scale(0.99);
+  box-shadow: 1px 2px 40px 20px rgba(83, 67, 3, 0.8);
 }
 
 /*--------------------------Animation #1--------------------------*/
 
 .modal-content {
-    width: 66%;
-    height: 99%;
-    display: none;
-    padding-top: 3px;
-    text-align: center;
-    border-radius: 50px;
-    margin: auto auto auto 12px;
-    border: 1px solid goldenrod;
-    background-color: rgb(43, 31, 2, 0.9);
-    box-shadow: 0px 5px 20px 3px rgba(218, 165, 32, 0.35);
+  max-width: 66%;
+  min-width: 66%;
+  height: 99%;
+  display: none;
+  padding-top: 3px;
+  text-align: center;
+  border-radius: 50px;
+  margin: auto auto auto 12px;
+  border: 1px solid goldenrod;
+  background-color: rgb(43, 31, 2, 0.9);
+  box-shadow: 0px 5px 20px 3px rgba(218, 165, 32, 0.35);
 }
-  
+
 .animate {
-    animation: animatezoom 0.6s
+  animation: animatezoom 0.6s;
 }
 
 @keyframes animatezoom {
-    from {transform: scaleX(0)}
-    to {transform: scaleX(1)}
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 /*---------- Using above animation ----------*/
 
 .c-keys {
-    width: 292px;
-    height: 70px;
-    font-size: 23px;
-    cursor: pointer;
-    transition: 300ms;
-    border-radius: 12px;
-    font-family:'B Nazanin';
-    margin: 70px 4px auto 4px;
-    color: rgb(255, 231, 170);
-    border: 1px solid goldenrod;
-    background-color: rgba(63, 45, 3, 0.7);
+  width: 292px;
+  height: 70px;
+  font-size: 23px;
+  cursor: pointer;
+  transition: 300ms;
+  border-radius: 12px;
+  font-family: "B Nazanin";
+  margin: 70px 4px auto 4px;
+  color: rgb(255, 231, 170);
+  border: 1px solid goldenrod;
+  background-color: rgba(63, 45, 3, 0.7);
 }
 .c-keys:hover {
-    background-color: rgba(119, 85, 6, 0.8);
+  background-color: rgba(119, 85, 6, 0.8);
 }
 .c-keys:active {
-    border: 1px solid rgb(255, 183, 0);
-    background-color: rgba(180, 129, 11, 0.9);
+  border: 1px solid rgb(255, 183, 0);
+  background-color: rgba(180, 129, 11, 0.9);
 }
 
 .inputs {
-    float: right;
-    max-width: 450px;
-    margin: 15px 88px auto;
+  float: right;
+  max-width: 450px;
+  margin: 15px 88px auto;
 }
 .lbls {
-    width: 90px;
-    height: 70px;
-    font-size: 25px;
-    font-weight: bolder;
-    font-family:'B Nazanin';
-    color: rgb(255, 231, 170);
+  width: 90px;
+  height: 70px;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: "B Nazanin";
+  color: rgb(255, 231, 170);
 }
 .input-text {
-    width: 450px;
-    height: 70px;
-    font-size: 25px;
-    transition: 300ms;
-    margin: 10px auto;
-    border-radius: 12px;
-    font-family:'B Nazanin';
-    padding: 0px 20px 0px 20px;
-    color: rgb(255, 231, 170);
-    border: 1px solid goldenrod;
-    background-color: rgb(43, 31, 2, 0.7);
-} 
+  width: 450px;
+  height: 70px;
+  font-size: 25px;
+  transition: 300ms;
+  margin: 10px auto;
+  border-radius: 12px;
+  font-family: "B Nazanin";
+  padding: 0px 20px 0px 20px;
+  color: rgb(255, 231, 170);
+  border: 1px solid goldenrod;
+  background-color: rgb(43, 31, 2, 0.7);
+}
 .input-text:hover {
-    box-shadow: inset 1px 2px 10px 3px rgba(218, 165, 32, 0.35);
+  box-shadow: inset 1px 2px 10px 3px rgba(218, 165, 32, 0.35);
 }
 .input-text:focus {
-    outline: none;
-    border: 1px solid goldenrod;
-    box-shadow: inset 1px 2px 10px 3px rgba(218, 165, 32, 0.35);
+  outline: none;
+  border: 1px solid goldenrod;
+  box-shadow: inset 1px 2px 10px 3px rgba(218, 165, 32, 0.35);
 }
 
 .field-03 {
-    height: 530px; 
-    margin-top: 50px;
+  height: 530px;
+  margin-top: 50px;
 }
 .inner-field {
-    width: 950px;
-    height: 407px;
-    overflow: scroll;
-    margin: 25px 70px auto;
-    border: 1px solid goldenrod;
+  width: 950px;
+  height: 407px;
+  overflow: scroll;
+  margin: 25px 70px auto;
+  border: 1px solid goldenrod;
 }
 
 /*--------------------------Animation #2--------------------------*/
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.35);
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .modal-content-2 {
-    width: 700px;
-    height: 700px;
-    padding-top: 3px;
-    text-align: center;
-    border-radius: 70px;
-    margin: 80px auto 0px auto;
-    border: 1px solid goldenrod;    
-    background-color: rgb(43, 31, 2, 0.9);
-    box-shadow: 0px 5px 20px 3px rgba(218, 165, 32, 0.9);
+  width: 700px;
+  height: 700px;
+  padding-top: 3px;
+  text-align: center;
+  border-radius: 70px;
+  margin: 80px auto 0px auto;
+  border: 1px solid goldenrod;
+  background-color: rgb(43, 31, 2, 0.9);
+  box-shadow: 0px 5px 20px 3px rgba(218, 165, 32, 0.9);
 }
 
 .animate-2 {
-    animation: animatezoom-2 0.6s
+  animation: animatezoom-2 0.6s;
 }
 
 @keyframes animatezoom-2 {
-    from {transform: scaleY(0)}
-    to {transform: scaleY(1)}
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 
 /*---------- Using above animation ----------*/
 
 .container-4 {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .add-window-title {
-    font-size: 48px;
-    margin-top: 17px;
-    color: goldenrod;
-    font-weight: bolder;
-    margin-bottom: -65px;
-    font-family:'B Nazanin';
-    text-shadow: 1px 2px 3px rgb(95, 76, 2);
+  font-size: 48px;
+  margin-top: 17px;
+  color: goldenrod;
+  font-weight: bolder;
+  margin-bottom: -65px;
+  font-family: "B Nazanin";
+  text-shadow: 1px 2px 3px rgb(95, 76, 2);
 }
 
 /*----------------------------------------------------------------*/
